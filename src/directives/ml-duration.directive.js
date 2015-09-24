@@ -133,10 +133,10 @@
         matches = duration.match(regex);
 
     return {
-      years:   parseFloat(matches[3])  || null,
-      months:  parseFloat(matches[5])  || null,
-      weeks:   parseFloat(matches[7])  || null,
-      days:    parseFloat(matches[9])  || null,
+      years:   parseFloat(matches[3]) || null,
+      months:  parseFloat(matches[5]) || null,
+      weeks:   parseFloat(matches[7]) || null,
+      days:    parseFloat(matches[9]) || null,
       hours:   parseFloat(matches[12]) || null,
       minutes: parseFloat(matches[14]) || null,
       seconds: parseFloat(matches[16]) || null,
