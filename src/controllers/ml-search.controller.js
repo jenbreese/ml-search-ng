@@ -295,5 +295,4 @@ function MLSearchController($scope, $location, mlSearch) {
       return res.suggestions || [];
     });
   };
-
 })();

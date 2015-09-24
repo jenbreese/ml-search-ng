@@ -1396,7 +1396,6 @@
             ];
 
             if ( _.contains(numberTypes, facetType) ) {
-
               newOptions.values.aggregate = newOptions.values.aggregate.concat([
                 { apply: 'sum' },
                 { apply: 'avg' },
@@ -1407,7 +1406,6 @@
                 // { apply: 'variance' },
                 // { apply: 'variance-population' }
               ]);
-
             }
 
             promises.push(
@@ -1548,5 +1546,4 @@
 
     return args;
   }
-
 })();

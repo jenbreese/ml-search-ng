@@ -1,5 +1,4 @@
 (function() {
-
   'use strict';
 
   /**
@@ -83,11 +82,9 @@
       });
 
       if (result.length > 1) {
-
         var last = result.splice(result.length - 1, 1);
         result = result.join(', ') + ', and ' + last[0];
         return result;
-
       } else {
         return result[0] || '0 seconds';
       }
@@ -148,5 +145,4 @@
       }
     };
   }
-
 }());

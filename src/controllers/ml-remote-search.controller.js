@@ -107,5 +107,4 @@ function MLRemoteSearchController($scope, $location, mlSearch, remoteInput) {
     this.remoteInput.setInput( this.qtext );
     return this;
   };
-
 })();

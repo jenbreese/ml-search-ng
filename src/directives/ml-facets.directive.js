@@ -1,5 +1,4 @@
 (function() {
-
   'use strict';
 
   /**
@@ -66,5 +65,4 @@
   function mlFacetsController($scope, $filter) {
     $scope.filter = $filter('filter');
   }
-
 }());
