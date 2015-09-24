@@ -694,7 +694,7 @@
       }
       var facet = _.find(active.values, { value: value });
 
-      if (!!facet) {
+      if (facet) {
         return facet.negated;
       } else {
         return false;
@@ -975,7 +975,7 @@
       }
 
       // if facet type information is available, options can be undefined
-      optionPromise = !!self.results.facets ?
+      optionPromise = self.results.facets ?
                       $q.resolve(undefined) :
                       self.getStoredOptions();
 
@@ -1066,7 +1066,7 @@
     getFacetConfig: function getFacetConfig(name, storedOptions) {
       var config = null;
 
-      if ( !!storedOptions ) {
+      if ( storedOptions ) {
         config = _.chain( storedOptions.options.constraint )
           .where({ name: name })
           .first()
