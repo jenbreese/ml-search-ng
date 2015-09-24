@@ -357,7 +357,7 @@
      * @return {MLSearchContext} `this`
      */
     setPage: function setPage(page) {
-      page = parseInt(page) || 1;
+      page = parseInt(page, 10) || 1;
       this.start = 1 + (page - 1) * this.options.pageLength;
       return this;
     },
