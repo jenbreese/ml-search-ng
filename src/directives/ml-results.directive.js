@@ -48,7 +48,7 @@
   }
 
   function link(scope, element, attrs) {
-    //default link fn
+    // default link fn
     if ( !attrs.link ) {
       scope.link = function(result) {
         // directive methods require objects
@@ -56,7 +56,7 @@
       };
     }
 
-    //default label fn
+    // default label fn
     if ( !attrs.label ) {
       scope.label = function(result) {
         // directive methods require objects

@@ -78,9 +78,9 @@
 
   angular.extend(MLSearchContext.prototype, {
 
-    /************************************************************/
-    /**************** MLSearchContext properties ****************/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ************** MLSearchContext properties ************** */
+    /* ******************************************************** */
 
     /**
      * pass an object to `new MLSearchContext()` or {@link MLSearchFactory#newContext}
@@ -125,13 +125,13 @@
         page: 'p',
         prefix: null,
         prefixSeparator: null
-        //TODO: queryOptions?
+        // TODO: queryOptions?
       }
     },
 
-    /************************************************************/
-    /******** MLSearchContext instance getters/setters **********/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ****** MLSearchContext instance getters/setters ******** */
+    /* ******************************************************** */
 
     /**
      * Gets the object repesenting active facet selections
@@ -344,7 +344,7 @@
      * @return {Number} search page
      */
     getPage: function getPage() {
-      //TODO: $window.Math
+      // TODO: $window.Math
       var page = Math.floor(this.start / this.options.pageLength) + 1;
       return page;
     },
@@ -362,9 +362,9 @@
       return this;
     },
 
-    /************************************************************/
-    /********* MLSearchContext options getters/setters **********/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ******* MLSearchContext options getters/setters ******** */
+    /* ******************************************************** */
 
     /**
      * Gets the current queryOptions (name of stored params)
@@ -492,7 +492,7 @@
      * @return {MLSearchContext} `this`
      */
     setFacetMode: function setFacetMode(facetMode) {
-      //TODO: validate facetMode
+      // TODO: validate facetMode
       this.options.facetMode = facetMode;
       return this;
     },
@@ -543,11 +543,11 @@
       return prefix;
     },
 
-    //TODO: setParamsConfig ?
+    // TODO: setParamsConfig ?
 
-    /************************************************************/
-    /************** MLSearchContext query builders **************/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ************ MLSearchContext query builders ************ */
+    /* ******************************************************** */
 
     /**
      * Constructs a structured query from the current state
@@ -661,9 +661,9 @@
       });
     },
 
-    /************************************************************/
-    /************** MLSearchContext facet methods ***************/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ************ MLSearchContext facet methods ************* */
+    /* ******************************************************** */
 
     /**
      * Check if the facet/value combination is already selected
@@ -822,9 +822,9 @@
       });
     },
 
-    /************************************************************/
-    /************ MLSearchContext URL params methods ************/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ********** MLSearchContext URL params methods ********** */
+    /* ******************************************************** */
 
     /**
      * Construct a URL query params object from the current state
@@ -1108,9 +1108,9 @@
       return this.fromParams(params);
     },
 
-    /************************************************************/
-    /********** MLSearchContext data retrieval methods **********/
-    /************************************************************/
+    /* ******************************************************** */
+    /* ******** MLSearchContext data retrieval methods ******** */
+    /* ******************************************************** */
 
     /**
      * Retrieves stored search options, caching the result in `this.storedOptions`
@@ -1130,7 +1130,7 @@
 
       return mlRest.queryConfig(name)
       .then(function(response) {
-        //TODO: transform?
+        // TODO: transform?
         self.storedOptions[name] = response.data;
         return self.storedOptions[name];
       });
@@ -1529,7 +1529,7 @@
     return options;
   }
 
-  //TODO: move to util module
+  // TODO: move to util module
   function asArray() {
     var args;
 
