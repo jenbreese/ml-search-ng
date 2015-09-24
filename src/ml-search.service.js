@@ -1398,7 +1398,7 @@
             if ( _.contains(numberTypes, facetType) ) {
               newOptions.values.aggregate = newOptions.values.aggregate.concat([
                 { apply: 'sum' },
-                { apply: 'avg' },
+                { apply: 'avg' }
                 // TODO: allow enabling these from config?
                 // { apply: 'median' },
                 // { apply: 'stddev' },

@@ -65,7 +65,7 @@
         minute: 'minute',
         minutes: 'minutes',
         second: 'second',
-        seconds: 'seconds',
+        seconds: 'seconds'
       };
 
       angular.extend(_options, options);
