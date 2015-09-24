@@ -7,8 +7,6 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     html2Js = require('gulp-ng-html2js'),
     eslint = require('gulp-eslint'),
-    // jshint = require('gulp-jshint'),
-    // jscs = require('gulp-jscs'),
     Server = require('karma').Server,
     minifyHtml = require('gulp-minify-html'),
     less = require('gulp-less'),
@@ -32,34 +30,6 @@ function handleError(level, error) {
     process.exit(1);
   }
 }
-
-// gulp.task('lint-style', function(done) {
-//   return gulp.src([
-//       './gulpfile.js',
-//       './src/**/*.js'
-//     ])
-//     .pipe(jscs())
-//     .pipe(jscs.reporter())
-//     .pipe(jscs.reporter('fail'))
-//     .on('error', function(err) {
-//       handleError('warning', err);
-//       this.emit('end');
-//     });
-// });
-
-// gulp.task('lint', ['lint-style'], function() {
-//   return gulp.src([
-//       './gulpfile.js',
-//       './src/**/*.js'
-//     ])
-//     .pipe(jshint())
-//     .pipe(jshint.reporter('default'))
-//     .pipe(jshint.reporter('fail'))
-//     .on('error', function(err) {
-//       handleError('warning', err);
-//       this.emit('end');
-//     });
-// });
 
 gulp.task('lint', function() {
   return gulp.src([
