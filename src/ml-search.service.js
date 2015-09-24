@@ -1419,8 +1419,7 @@
               })
             );
           });
-        }
-        catch (err) {
+        } catch (err) {
           return $q.reject(err);
         }
 
